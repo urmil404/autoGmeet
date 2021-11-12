@@ -10,12 +10,23 @@ msg = ""
 
 
 def showTodaysLectures(day):
+    global msg
     for i in range(1, 5):
-        lecName = tt.Lecture[day][i]
-        global msg
-        msg = f"{lecName['1-OSTP - KG']}"
-        # msg = f"{lecName}]"
-        break
+        if i==1:
+            time = 9.30
+            lecName = tt.Lecture[day][i]
+            msg = f"{lecName[1]}"
+        elif i==2:
+            lecName = tt.Lecture[day][i]
+            msg = f"{lecName[2]}"
+        elif i==3:
+            lecName = tt.Lecture[day][i]
+            msg = f"{lecName[3]}"
+        elif i==4:
+            lecName = tt.Lecture[day][i]
+            msg = f"{lecName[4]}"
+
+            
 
 def openWP(msg):
     print("Opening WhatsApp...")
