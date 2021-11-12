@@ -1,3 +1,4 @@
 .vscode
 pywhatkit_dbs.txt
 __pycache__
+venv
