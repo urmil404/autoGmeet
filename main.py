@@ -12,10 +12,6 @@ current_minute = int(current_time[3:5])
 current_date = date.today()
 today = calendar.day_name[current_date.weekday()]
 msg = ""
-print(msg)
-print(today)
-print(current_time)
-print(check_time)
 
 
 def showTodaysLectures(today):
@@ -29,12 +25,15 @@ def showTodaysLectures(today):
         elif check_time == "10:30":
             lecName = tt.Lecture[today][2]
             msg = f"{lecName[2]}"
+            print(f"{today} Lecture 2 Started")
         elif check_time == "12:00":
             lecName = tt.Lecture[today][3]
             msg = f"{lecName[3]}"
+            print(f"{today} Lecture 3 Started")
         elif check_time == "13:00":
             lecName = tt.Lecture[today][4]
             msg = f"{lecName[4]}"
+            print(f"{today} Lecture 4 Started")
 
 
 def openWP(msg):
